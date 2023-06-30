@@ -138,39 +138,18 @@ header {
     font-size: 2rem;
     color: var(--main-color);
 }
-/*----------------------services------------------*/
-
-.services{
-    width: 100%;
-    height: auto;
-    padding: 85px 0 0 0 ;
-}
-
-.services .services_box{
-    width: 95%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 0 10px;
-}
-
-.services .services_box .services_card{
-    margin: 0 auto;
-    background: #fde4e4;
-    padding: 10px;
+/***************************************************************************************************/
+/********************************************* BOUTON **********************************************/
+/***************************************************************************************************/
+.centered-button {
+    display: block;
     text-align: center;
-    cursor: pointer;
-}
-
-.services .services_box .services_card i{
-    font-size: 35px;
-    margin: 10px 0;
-    color: #fda211;
-}
-
-.services .services_box .services_card h2{
-    font-size: 20px;
-    padding: 8px 0;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
 }
 /***************************************************************************************************/
 /******************************************** HISTOIRE *********************************************/
@@ -209,17 +188,60 @@ header {
     }
 }
 /***************************************************************************************************/
-/********************************************* BOUTON **********************************************/
+/********************************************* DIVERS **********************************************/
 /***************************************************************************************************/
-.centered-button {
-    display: block;
-    text-align: center;
+.services{
+    width: 100%;
+    height: auto;
+    padding: 85px 0 0 0 ;
+}
+
+.services .services_box{
+    width: 95%;
     margin: 0 auto;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0 10px;
+}
+
+.services .services_box .services_card{
+    margin: 0 auto;
+    background: #fde4e4;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.services .services_box .services_card i{
+    font-size: 35px;
+    margin: 10px 0;
+    color: #fda211;
+}
+
+.services .services_box .services_card h2{
+    font-size: 20px;
+    padding: 8px 0;
+}
+
+/* Styles pour les écrans d'ordinateur de grande taille */
+@media only screen and (min-width: 1201px) {
+    .services .services_box {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* Styles pour les écrans d'ordinateurs de taille moyenne (tablettes, etc.) */
+@media only screen and (max-width: 1200px) {
+    .services .services_box {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Styles pour les écrans mobiles */
+@media only screen and (max-width: 768px) {
+    .services .services_box {
+        grid-template-columns: 1fr;
+    }
 }
 /***************************************************************************************************/
 /********************************************* CONTACT *********************************************/
