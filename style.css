@@ -915,17 +915,17 @@ body {
 
 @media (max-width: 768px) {
   #footer {
-    height: auto;             /* Définit la hauteur sur auto */
-    overflow-y: visible;     /* Permet le débordement vertical */
-    display: flex;           /* Assure que les éléments sont affichés en flex */
-    flex-direction: column;  /* Les éléments s'empilent verticalement */
-    align-items: center;     /* Centre les éléments horizontalement */
+      height: auto; /* Cela ajustera la hauteur en fonction du contenu */
+      overflow-y: auto; /* Si le contenu est trop grand, il permettra le défilement */
+      display: flex;          /* Assure que les éléments sont affichés en flex */
+      flex-direction: column; /* Les éléments s'empilent verticalement */
+      align-items: center;    /* Centre les éléments horizontalement */
   }
   #f1, #f2, #f3, #f4 {
-    width: 100%;             /* Utilise toute la largeur disponible */
-    text-align: center;      /* Centre le contenu */
+      width: 100%;            /* Utilise toute la largeur disponible */
+      text-align: center;     /* Centre le contenu */
   }
   #footer h3, #footer h4 {
-    font-size: 0.6em; /* Ajustez cette valeur selon vos besoins */
+    font-size: 0.65em; /* Réduisez cette valeur si nécessaire */
 }
 }
